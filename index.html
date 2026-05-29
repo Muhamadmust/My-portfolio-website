@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Muhammad Mustapha — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Muhammad Mustapha — Frontend Developer & Software Engineering student at FUTMinna. Projects, skills, and contact."
+    />
+
+    <!-- Google Fonts (display + body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#home">Skip to content</a>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-texture" aria-hidden="true"></div>
+
+    <header class="nav" id="siteNav">
+      <div class="nav-inner nav-blur">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+          <a class="brand" href="#home" aria-label="Go to top">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-title">
+              <strong>Muhammad Mustapha</strong>
+              <span>Frontend Developer</span>
+            </span>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary">
+            <a class="nav-link" href="#home" data-nav="home">Home</a>
+            <a class="nav-link" href="#about" data-nav="about">About</a>
+            <a class="nav-link" href="#skills" data-nav="skills">Skills</a>
+            <a class="nav-link" href="#projects" data-nav="projects">Projects</a>
+            <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+              <span id="themeIcon" aria-hidden="true">☾</span>
+            </button>
+
+            <button
+              class="icon-btn hamburger"
+              id="menuBtn"
+              type="button"
+              aria-controls="mobilePanel"
+              aria-expanded="false"
+              aria-label="Open menu"
+              title="Menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
+        <div class="container">
+          <div class="mobile-links">
+            <a href="#home" data-close-menu>Home</a>
+            <a href="#about" data-close-menu>About</a>
+            <a href="#skills" data-close-menu>Skills</a>
+            <a href="#projects" data-close-menu>Projects</a>
+            <a href="#contact" data-close-menu>Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="reveal">
+              <p class="kicker">Aspiring AI Engineer</p>
+              <h1 class="hero-title">
+                Muhammad <span class="accent">Mustapha</span>
+              </h1>
+
+              <div class="hero-type" aria-live="polite">
+                <span>Crafting clean UI as</span>
+                <span class="typewrap">
+                  <strong id="typeTarget">Frontend Developer</strong>
+                  <span class="caret" aria-hidden="true"></span>
+                </span>
+              </div>
+
+              <p class="hero-copy">
+                Frontend developer and Software Engineering student at the Federal University of Technology, Minna (FUTMinna) —
+                also an aspiring AI engineer. I build modern, functional web experiences with attention to detail, accessibility,
+                and performance.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#projects">
+                  <span aria-hidden="true">↳</span>
+                  View Projects
+                </a>
+                <a
+                  class="btn btn-ghost"
+                  href="assets/Muhammad_Mustapha_CV.pdf"
+                  download="Muhammad_Mustapha_CV.pdf"
+                  rel="noopener"
+                >
+                  <span aria-hidden="true">⤓</span>
+                  View / Download CV
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-card reveal" aria-label="Highlights">
+              <div class="hero-card-inner">
+                <div class="code-chip">
+                  <span style="display: inline-flex; align-items: center; gap: 10px">
+                    <span class="chip-dot" aria-hidden="true"></span>
+                    <span>console.log("ship polished UI");</span>
+                  </span>
+                  <span style="opacity: 0.8">v1.0</span>
+                </div>
+
+                <div class="stat-grid">
+                  <div class="stat">
+                    <b>Clean UI</b>
+                    <span>Pixel-careful layouts with accessible patterns.</span>
+                  </div>
+                  <div class="stat">
+                    <b>Fast &amp; Responsive</b>
+                    <span>Mobile-first, fluid grid, smooth interactions.</span>
+                  </div>
+                  <div class="stat">
+                    <b>Modern JS</b>
+                    <span>Vanilla JavaScript with real UX behavior.</span>
+                  </div>
+                  <div class="stat">
+                    <b>Developer Vibe</b>
+                    <span>Bold typography, glow accents, subtle geometry.</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">About</p>
+              <h2 class="h2">Intentional design. Solid engineering.</h2>
+            </div>
+          </div>
+
+          <div class="about-card reveal">
+            <p class="subtle" style="margin: 0">
+              I’m a passionate frontend developer and Software Engineering student at FUT Minna, focused on building clean,
+              functional web experiences. I enjoy turning ideas into responsive interfaces with smooth interactions and a
+              strong attention to detail.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">Skills</p>
+              <h2 class="h2">Tools I build with.</h2>
+              <p class="subtle" style="margin: 10px 0 0">A lean stack — mastered fundamentals, modern workflow, and UI craft.</p>
+            </div>
+          </div>
+
+          <div class="skills-wrap reveal" aria-label="Skills list">
+            <span class="pill"><i aria-hidden="true"></i>HTML5</span>
+            <span class="pill"><i aria-hidden="true"></i>CSS3</span>
+            <span class="pill"><i aria-hidden="true"></i>JavaScript</span>
+            <span class="pill"><i aria-hidden="true"></i>Git &amp; GitHub</span>
+            <span class="pill"><i aria-hidden="true"></i>React</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="kicker">Projects</p>
+              <h2 class="h2">Work that feels real.</h2>
+              <p class="subtle" style="margin: 10px 0 0">
+                A curated set of builds — interactive, responsive, and intentionally polished.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-grid">
+            <article class="card reveal">
+              <div class="card-top">
+                <div>
+                  <h3>Calculator</h3>
+                  <p>A functional browser calculator with crisp layout, keyboard-friendly UX, and clean logic.</p>
+                </div>
+                <div class="card-emoji" aria-hidden="true">🧮</div>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-small" href="https://github.com/Muhamadmust" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <div>
+                  <h3>Guess Game</h3>
+                  <p>A fun number guessing game with feedback loops, resets, and a satisfying win state.</p>
+                </div>
+                <div class="card-emoji" aria-hidden="true">🎯</div>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-small" href="https://github.com/Muhamadmust" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <div>
+                  <h3>Portfolio</h3>
+                  <p>This portfolio website — built in pure HTML, CSS, and JS with real UX behaviors and motion.</p>
+                </div>
+                <div class="card-emoji" aria-hidden="true">💼</div>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-small" href="https://github.com/Muhamadmust" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <div>
+                  <h3>AI Debugger + Quiz App</h3>
+                  <p>
+                    An AI-powered code debugger concept paired with an integrated quiz flow — learn, test, iterate.
+                  </p>
+                </div>
+                <div class="card-emoji" aria-hidden="true">🤖</div>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-ghost btn-small" href="https://github.com/Muhamadmust" target="_blank" rel="noopener">
+                  GitHub ↗
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-head reveal" style="justify-content: center; text-align: center">
+            <div>
+              <p class="kicker">Contact</p>
+              <h2 class="h2">Let’s build something sharp.</h2>
+              <p class="subtle" style="margin: 10px auto 0">
+                Reach out, connect, or explore my work. I’m always open to collaboration and growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <div style="display: grid; gap: 6px">
+              <div style="font-family: var(--font-display); font-weight: 800; letter-spacing: -0.03em; font-size: 20px">
+                Muhammad Mustapha
+              </div>
+              <div class="subtle" style="margin: 0">Frontend Developer • SE Student @ FUTMinna • Aspiring AI Engineer</div>
+            </div>
+
+            <div class="contact-links" aria-label="Social links">
+              <a class="social" href="https://x.com/Awwal_ts" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M16.6 3H20l-7.4 8.5L21.5 21H15l-5.2-6.6L4 21H0.6l8-9.2L0 3h6.7l4.7 6L16.6 3Z"
+                    fill="currentColor"
+                    opacity="0.9"
+                  />
+                </svg>
+                X (Twitter)
+              </a>
+
+              <a class="social" href="https://github.com/Muhamadmust" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 2C6.48 2 2 6.6 2 12.29c0 4.55 2.87 8.41 6.84 9.78.5.1.68-.22.68-.49 0-.24-.01-.89-.01-1.75-2.78.62-3.37-1.38-3.37-1.38-.46-1.2-1.12-1.52-1.12-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.58 2.36 1.12 2.93.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.09 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05.8-.23 1.66-.35 2.51-.35.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.77 0 3.96-2.34 4.82-4.57 5.08.36.32.69.95.69 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49 3.97-1.37 6.84-5.23 6.84-9.78C22 6.6 17.52 2 12 2Z"
+                    fill="currentColor"
+                    opacity="0.9"
+                  />
+                </svg>
+                GitHub
+              </a>
+
+              <a class="social" href="https://linkedin.com/in/muhammad-mustapha-b6aab3332/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.33V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.59 0 4.25 2.36 4.25 5.43v6.32ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"
+                    fill="currentColor"
+                    opacity="0.9"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="subtle" style="margin: 0; font-size: 13px">
+              Tip: your CV is linked from <b>assets/Muhammad_Mustapha_CV.pdf</b> — replace that file anytime to update it.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Designed &amp; Built by Muhammad Mustapha © 2025</div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
